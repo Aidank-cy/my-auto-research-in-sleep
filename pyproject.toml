@@ -1,0 +1,19 @@
+[project]
+name = "my-auto-research-in-sleep"
+version = "0.1.0"
+description = "Agent-executed literature research workflows"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "certifi>=2026.2.25",
+    "pypdf==6.10.2",
+    "requests>=2.32,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4,<9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
